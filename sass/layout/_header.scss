@@ -1,15 +1,13 @@
+/*
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
 }
+*/
 
-.header-container {
-  display: flex;
-  padding-left: 15px;
-}
-
+/*
 .navigation {
   display: flex;
 }
@@ -21,15 +19,21 @@
   margin-right: 10px;
   fill: currentColor;
 }
-
+*/
 .accent-logo {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
+
 .logo {
   animation-duration: 250ms;
   animation-iteration-count: 2;
@@ -44,7 +48,7 @@
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-
+/*
 .menu {
   display: flex;
   align-items: center;
@@ -110,3 +114,4 @@
     color: var(--accent-color);
   }
 }
+*/

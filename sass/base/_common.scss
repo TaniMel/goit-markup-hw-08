@@ -29,3 +29,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-text-color);
 }
+.section {
+  padding-top: var(--section-padding-gap);
+  padding-bottom: var(--section-padding-gap);
+}
