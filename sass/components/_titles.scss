@@ -1,12 +1,22 @@
 .teamwork-title,
 .team-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   vertical-align: top;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
 .regular-customers-title {
