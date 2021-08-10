@@ -21,19 +21,6 @@
   display: none;
 }
 
-.footer-container .contact__list {
-  margin-top: 8px;
-
-  @media screen and (min-width: 1200px) {
-    margin-top: 9px;
-  }
-}
-
-.footer-container .contact__link {
-  font-weight: 400;
-  color: #757575;
-}
-
 // Tablet Menu
 @media screen and (min-width: 768px) {
   .menu__contacts .contacts {

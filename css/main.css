@@ -115,7 +115,7 @@ body {
   display: none;
 }
 
-.menu-block.is-open {
+.menu-block .menu-block .is-open {
   position: fixed;
   z-index: 1;
   top: 0;
@@ -130,11 +130,11 @@ body {
   background-color: #ffffff;
 }
 
-.menu-block.is-open .navigation {
+.menu-block .menu-block .is-open .navigation {
   display: block;
 }
 
-.menu-block.is-open .contacts {
+.menu-block .menu-block .is-open .contacts {
   display: flex;
   flex-direction: column-reverse;
   margin-bottom: 64px;
@@ -269,7 +269,7 @@ body {
 }
 
 .menu-toggle {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -296,11 +296,6 @@ body {
   right: 15px;
 }
 
-/* &__icon {
-      width: 24px;
-      height: 16px;
-    }
-*/
 .menu-toggle .icon-cross {
   display: none;
 }
@@ -470,21 +465,6 @@ body {
 
 .icon-email {
   display: none;
-}
-
-.address .contact__list {
-  margin-top: 8px;
-}
-
-@media screen and (min-width: 1200px) {
-  .address .contact__list {
-    margin-top: 9px;
-  }
-}
-
-.address .contact__link {
-  font-weight: 400;
-  color: #757575;
 }
 
 @media screen and (min-width: 768px) {
@@ -1316,6 +1296,21 @@ body {
   }
 }
 
+/*
+.footer-container .contact__list {
+  margin-top: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 9px;
+  }
+}
+
+.footer-container .contact__link {
+  font-weight: 400;
+  color: #757575;
+}
+
+*/
 .address {
   margin-top: 20px;
   margin-bottom: 60px;
@@ -1493,6 +1488,12 @@ body {
   }
 }
 
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .menu-button__btn {
   font-family: "Roboto", sans-serif;
   display: inline-block;
@@ -1545,12 +1546,6 @@ body {
   margin-right: 8px;
 }
 */
-.img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .menu-cards {
   /* display: flex;
   flex-wrap: wrap;*/
@@ -1569,6 +1564,12 @@ body {
 @media screen and (min-width: 1200px) {
   .menu-cards {
     margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-cards .catalogue:nth-child(1) .card-border-content {
+    min-height: 143px;
   }
 }
 

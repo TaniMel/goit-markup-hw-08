@@ -21,7 +21,7 @@
     display: none;
   }
 
-  &.is-open {
+  .menu-block .is-open {
     position: fixed;
     z-index: 1;
     top: 0;
@@ -39,11 +39,11 @@
     background-color: #ffffff;
   }
 
-  &.is-open .navigation {
+  .menu-block .is-open .navigation {
     display: block;
   }
 
-  &.is-open .contacts {
+  .menu-block .is-open .contacts {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 64px;
