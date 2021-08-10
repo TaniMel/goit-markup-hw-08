@@ -26,31 +26,17 @@
 
   <body>
     <!--Шапка сторінки-->
+  
     <header class="header">
       <div class="container header-container">
-        <nav class="navigation">
+        
           <a class="logo header__logo link animate__swing" href="./" lang="en"
             ><span class="accent-logo">Web</span>Studio
           </a>
-          <button
-            type="button"
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-            data-menu-button
-          >
-            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-              <use
-                class="icon-cross"
-                href="./images/symbol-defs.svg#icon-cross_40px"
-              ></use>
-              <use
-                class="icon-menu-mobile"
-                href="./images/symbol-defs.svg#icon-menu_40px"
-              ></use>
-            </svg>
-          </button>
+          
     <!--Навігація на інші сторінки-->
+    <div class="menu-block js-menu-container" data-modal-open>
+  <nav class="navigation">
 <ul class="menu list">
             <li class="menu__list">
               <a href="" class="menu__link current link">Студия</a>
@@ -63,7 +49,9 @@
             </li>
           </ul>
         </nav>
-        <ul class="contact list">
+
+        <div class="menu__contacts">
+        <ul class="contacts list">
           <li class="contact__list">
             <a class="contact__link link" href="mailto:info@devstudio.com">
               <svg class="icon-email"><use href="./images/symbol-defs.svg#icon-envelope"></use></svg>
@@ -77,41 +65,9 @@
             >
           </li>
         </ul>
-        <div class="menu__container js-open-menu" id="mobile-menu" data-menu>
-          <div class="menu-button__nav"></div>
-          <ul class="menu__nav-mobile list">
-            <li class="menu__nav-mobile-item link">
-              <a href="./index.html" class="menu__nav-link link">Студия</a>
-            </li>
-            <li class="menu__nav-mobile-item">
-              <a href="./portfolio.html" class="menu__nav-link link"
-                >Портфолио</a
-              >
-            </li>
-            <li class="menu__nav-mobile-item">
-              <a href="#" class="menu__nav-link link">Контакты</a>
-            </li>
-          </ul>
-          <div class="mobile-menu__wrapper">
-            <ul class="mobile-menu__contacts list">
-              <li class="mobile-menu-contacts__item">
-                <a
-                  class="mobile-menu-contacts__link link"
-                  href="tel:+380961111111"
-                >
-                  +38 096 111 11 11</a
-                >
-              </li>
-              <li class="mobile-menu-contacts__item">
-                <a
-                  class="mobile-menu-contacts__link link"
-                  href="mailto:info@devstudio.com"
-                >
-                  info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="social-list-mobile-menu list">
+      
+        <!--Social list-->
+         <ul class="social-list-mobile-menu list">
               <li class="social-list-mobile-menu__item">
                 <a href="" class="social-list-mobile-menu__link link"
                   >Instagram</a
@@ -135,13 +91,30 @@
             </ul>
           </div>
         </div>
-      </div>
+    
+      <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use
+                class="icon-cross"
+                href="./images/symbol-defs.svg#icon-cross_40px"
+              ></use>
+              <use
+                class="icon-burger"
+                href="./images/symbol-defs.svg#icon-menu_40px"
+              ></use>
+            </svg>
+          </button>
+            </div>
     </header>
      <main>
 
     <!--Герой-->
-    <section class="hero">
-      <div class="container">
+   <section class="hero">
+      <div class="container hero__container">
         <h1 class="hero__title">
           Эффективные решения <br />
           для вашего бизнеса
@@ -153,6 +126,7 @@
     </section>
 
     <!--Cильні сторони-->
+  
       <section class="advantage-section">
         <div class="container">
           <h2 hidden>Переваги</h2>
@@ -188,6 +162,7 @@
           </ul>
         </div>
       </section> 
+  
     <!--Компетенція працівників-->
 
     <section class="teamwork-section">
@@ -225,8 +200,9 @@
         </ul>
       </div>
     </section>
+  
     <!--Співробітники-->
-   
+
       <section class="team-group-section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
@@ -241,25 +217,25 @@
   />
   <source
     media="(min-width: 1200px)"
-    srcset="./images/desktop/team1.jpg 1x, ./images/desktop/team1@2.jpg 2x"
+    srcset="./images/desktop/team1.jpg 1x, ./images/desktop/team1@2x.jpg 2x"
   />
   <source
     media="(min-width: 768px)"
-    srcset="./images/tablet/team1.webp 1x, ./images/tablet/team1@2.webp 2x"
+    srcset="./images/tablet/team1.webp 1x, ./images/tablet/team1@2x.webp 2x"
     type="image/webp"
   />
   <source
     media="(min-width: 768px)"
-    srcset="./images/tablet/team1.jpg 1x, ./images/tablet/team1@2.jpg 2x"
+    srcset="./images/tablet/team1.jpg 1x, ./images/tablet/team1@2x.jpg 2x"
   />
   <source
     media="(min-width: 480px)"
-    srcset="./images/mobile/team1.webp 1x, ./images/mobile/team1@2.webp 2x"
+    srcset="./images/mobile/team1.webp 1x, ./images/mobile/team1@2x.webp 2x"
     type="image/webp"
   />
   <source
     media="(min-width: 480px)"
-    srcset="./images/mobile/team1.jpg 1x, ./images/mobile/team1@2.jpg 2x"
+    srcset="./images/mobile/team1.jpg 1x, ./images/mobile/team1@2x.jpg 2x"
   />
 <img
                 src="./images/photo-igor.jpg"
@@ -314,25 +290,25 @@
   />
   <source
     media="(min-width: 1200px)"
-    srcset="./images/desktop/team2.jpg 1x, ./images/desktop/team2@2.jpg 2x"
+    srcset="./images/desktop/team2.jpg 1x, ./images/desktop/team2@2x.jpg 2x"
   />
   <source
     media="(min-width: 768px)"
-    srcset="./images/tablet/team2.webp 1x, ./images/tablet/team2@2.webp 2x"
+    srcset="./images/tablet/team2.webp 1x, ./images/tablet/team2@2x.webp 2x"
     type="image/webp"
   />
   <source
     media="(min-width: 768px)"
-    srcset="./images/tablet/team2.jpg 1x, ./images/tablet/team2@2.jpg 2x"
+    srcset="./images/tablet/team2.jpg 1x, ./images/tablet/team2@2x.jpg 2x"
   />
   <source
     media="(min-width: 480px)"
-    srcset="./images/mobile/team2.webp 1x, ./images/mobile/team2@2.webp 2x"
+    srcset="./images/mobile/team2.webp 1x, ./images/mobile/team2@2x.webp 2x"
     type="image/webp"
   />
   <source
     media="(min-width: 480px)"
-    srcset="./images/mobile/team2.jpg 1x, ./images/mobile/team2@2.jpg 2x"
+    srcset="./images/mobile/team2.jpg 1x, ./images/mobile/team2@2x.jpg 2x"
   />
 <img
                 src="./images/photo-olga.jpg"
@@ -386,25 +362,25 @@
   />
   <source
     media="(min-width: 1200px)"
-    srcset="./images/desktop/team3.jpg 1x, ./images/desktop/team3@2.jpg 2x"
+    srcset="./images/desktop/team3.jpg 1x, ./images/desktop/team3@2x.jpg 2x"
   />
   <source
     media="(min-width: 768px)"
-    srcset="./images/tablet/team3.webp 1x, ./images/tablet/team3@2.webp 2x"
+    srcset="./images/tablet/team3.webp 1x, ./images/tablet/team3@2x.webp 2x"
     type="image/webp"
   />
   <source
     media="(min-width: 768px)"
-    srcset="./images/tablet/team3.jpg 1x, ./images/tablet/team3@2.jpg 2x"
+    srcset="./images/tablet/team3.jpg 1x, ./images/tablet/team3@2x.jpg 2x"
   />
   <source
     media="(min-width: 480px)"
-    srcset="./images/mobile/team3.webp 1x, ./images/mobile/team3@2.webp 2x"
+    srcset="./images/mobile/team3.webp 1x, ./images/mobile/team3@2x.webp 2x"
     type="image/webp"
   />
   <source
     media="(min-width: 480px)"
-    srcset="./images/mobile/team3.jpg 1x, ./images/mobile/team3@2.jpg 2x"
+    srcset="./images/mobile/team3.jpg 1x, ./images/mobile/team3@2x.jpg 2x"
   />
   <img
                 src="./images/photo-nikolaj.jpg"
@@ -460,25 +436,25 @@
   />
   <source
     media="(min-width: 1200px)"
-    srcset="./images/desktop/team4.jpg 1x, ./images/desktop/team4@2.jpg 2x"
+    srcset="./images/desktop/team4.jpg 1x, ./images/desktop/team4@2x.jpg 2x"
   />
   <source
     media="(min-width: 768px)"
-    srcset="./images/tablet/team4.webp 1x, ./images/tablet/team4@2.webp 2x"
+    srcset="./images/tablet/team4.webp 1x, ./images/tablet/team4@2x.webp 2x"
     type="image/webp"
   />
   <source
     media="(min-width: 768px)"
-    srcset="./images/tablet/team4.jpg 1x, ./images/tablet/team4@2.jpg 2x"
+    srcset="./images/tablet/team4.jpg 1x, ./images/tablet/team4@2x.jpg 2x"
   />
   <source
     media="(min-width: 480px)"
-    srcset="./images/mobile/team4.webp 1x, ./images/mobile/team4@2.webp 2x"
+    srcset="./images/mobile/team4.webp 1x, ./images/mobile/team4@2x.webp 2x"
     type="image/webp"
   />
   <source
     media="(min-width: 480px)"
-    srcset="./images/mobile/team4.jpg 1x, ./images/mobile/team4@2.jpg 2x"
+    srcset="./images/mobile/team4.jpg 1x, ./images/mobile/team4@2x.jpg 2x"
   />
    <img
                 src="./images/photo-makhail.jpg"
@@ -527,6 +503,7 @@
         </div>
       </section>
     <!-----------------  Постійні клієнти ------------->
+    
 <section class="section">
   <div class="container customer-container">
     <h2 class="regular-customers-title">Постоянные клиенты</h2>
@@ -541,6 +518,8 @@
   </div>
 </section>
     </main>
+
+
     <footer class="footer">
       <div class="container footcontainer">
         <div class="footer-container">
@@ -548,6 +527,7 @@
             ><span class="accent-logo">Web</span
             ><span class="accent-logo-white">Studio</span></a
           >
+          
     <!--Контактна інформація-->
 
           <address class="address">
