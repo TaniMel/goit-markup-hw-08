@@ -15,9 +15,9 @@
   flex-wrap: wrap;
   margin-left: -15px;
   margin-top: -15px;
-}
+  justify-content: center;
 
-/*
+  /*
 .customer__list {
   margin-left: 30px;
   margin-top: 30px;
@@ -25,20 +25,16 @@
 }
 */
 
-.customer__list {
-  width: 100%;
-  flex-basis: calc((100% - 4 * 15px) / 2);
-  margin: 15px;
+  @media screen and (max-width: 767px) {
+    .customer__list {
+      width: 100%;
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+  }
 }
 
 .regular-customer-list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -15px;
-    margin-left: -15px;
-  }
-
   @media screen and (min-width: 1200px) {
     margin: -15px;
   }

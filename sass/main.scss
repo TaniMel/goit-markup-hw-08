@@ -1,6 +1,6 @@
 //UTILS
 @import "./utils/variables";
-@import "./utils/visually-hidden";\
+@import "./utils/visually-hidden";
 @import "./utils/func";
 
 //BASE
@@ -12,16 +12,18 @@
 @import "./components/logo";
 @import "./components/contacts";
 @import "./components/backdrop";
+@import "./components/modal";
 @import "./components/titles";
 @import "./components/social-list";
 @import "./components/footer-social";
-@import "./components/modal-window";
+
 @import "./components/modal-window-form";
 @import "./components/mobile_menu";
 
 //LAYOUT
 @import "./layout/header";
 @import "./layout/hero";
+@import "./layout/hero-bg-photo";
 @import "./layout/advantage";
 @import "./layout/teamwork";
 @import "./layout/customers";

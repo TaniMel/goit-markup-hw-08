@@ -68,11 +68,11 @@
   }
 }
 
-.info__list:not(:last-child) {
+.info__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contact__list a {
+.info-contact__list a {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   margin-bottom: 60px;
