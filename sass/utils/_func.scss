@@ -1,4 +1,4 @@
-:root {
+/*:root {
   --primary-text-color: #212121;
   --accent-color: #2196f3;
   --secondary-text-color: #757575;
@@ -27,6 +27,7 @@
   --var-animation-cubic: cubic-bezier(0.4, 0, 0.2, 1);
   --var-animation-duration: 250ms;
 }
+*/
 
 // ========== Для перевода px в rem ==========
 @mixin font-size($size, $base: 16) {
@@ -35,7 +36,7 @@
 }
 
 $breakpoints: (
-  "mobile": 480,
+  "mobile": 480px,
   "tablet": 768px,
   "desktop": 1200px,
 );

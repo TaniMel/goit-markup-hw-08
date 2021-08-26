@@ -11,38 +11,38 @@
   padding: 40px;
 */
 .modal {
-  position: relative;
-  // position: absolute;
+  position: absolute;
+  width: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  //  max-height: 100%;
-  width: 528px;
-  height: 581px;
   background: #ffffff;
   box-shadow: var(--box-shadow-modal);
   border-radius: 4px;
   padding: 40px;
 
-  /*
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 450px;
-    height: 609px;
   }
-  @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: 768px) {
     width: 528px;
-    height: 581px;
+    // height: 581px;
   }
-*/
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    // height: 581px;
+  }
 
   &__content {
-    height: calc(100% -30px);
+    height: calc(100% - 30px);
     padding: 40px;
     overflow-y: auto;
   }
 }
 
-.close-btn {
+.close__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -58,14 +58,14 @@
   padding: 0;
 }
 
-.close-btn:hover {
+.close__btn:hover {
   fill: var(--accent-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__button-close {
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
   fill: #000;
 }
 
@@ -84,7 +84,7 @@
   color: #212121;
   margin-bottom: 12px;
 }
-
+/*
 // Desktop styles
 @media screen and (min-width: 768px) {
   .modal {
@@ -123,6 +123,8 @@
     height: 581px;
   }
 }
+*/
+/*
 .close-btn {
   position: absolute;
   top: 8px;
@@ -143,7 +145,7 @@
   fill: var(--accent-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+*/
 .modal-form-button {
   display: inline-block;
   padding: 10px, 32px;

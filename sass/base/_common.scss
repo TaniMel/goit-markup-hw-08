@@ -11,10 +11,6 @@ ul {
   padding-left: 0;
 }
 
-img {
-  display: block;
-}
-
 .list {
   list-style: none;
   margin: 0;
@@ -32,4 +28,9 @@ body {
 .section {
   padding-top: var(--section-padding-gap);
   padding-bottom: var(--section-padding-gap);
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
