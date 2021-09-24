@@ -5,7 +5,11 @@
 }
 
 .teamwork-section {
-  padding-bottom: var(--section-padding-gap);
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: var(--section-padding-gap);
+  }
 }
 
 .teamwork {
@@ -15,6 +19,7 @@
 
 .teamwork__imagine {
   position: relative;
+  display: inherit;
 }
 
 .teamwork-text__onimg {
