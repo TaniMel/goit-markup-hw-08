@@ -1431,22 +1431,6 @@ body {
   color: #757575;
 }
 
-@media screen and (max-width: 1200px) {
-  .teamwork-section {
-    display: none;
-  }
-}
-
-.teamwork-section {
-  padding: 60px 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .teamwork-section {
-    padding-bottom: var(--section-padding-gap);
-  }
-}
-
 .teamwork {
   display: flex;
   justify-content: space-between;
@@ -1472,6 +1456,26 @@ body {
   background: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   padding-bottom: 27px;
+}
+
+.team-member_img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .teamwork-section {
+    display: none;
+  }
+}
+
+.teamwork-section {
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .teamwork-section {
+    padding-bottom: var(--section-padding-gap);
+  }
 }
 
 .team-staff {
