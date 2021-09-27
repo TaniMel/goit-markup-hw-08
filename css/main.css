@@ -1754,8 +1754,7 @@ body {
 }
 
 .info__address:hover, .info__address:focus {
-  background: var(--accent-color);
-  color: #ffffff;
+  color: var(--accent-color);
 }
 
 .info__footer {
@@ -1770,8 +1769,7 @@ body {
 }
 
 .info__footer:hover, .info__footer:focus {
-  background: var(--accent-color);
-  color: #ffffff;
+  color: var(--accent-color);
 }
 
 .footer-icon {
