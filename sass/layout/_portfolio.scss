@@ -136,6 +136,7 @@
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
   transform: translateY(101%);
+  overflow-y: auto;
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
